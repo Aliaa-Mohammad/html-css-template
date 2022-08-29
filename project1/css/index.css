@@ -1,0 +1,405 @@
+/* 
+   1. common styles
+   2. general styles
+   3. sections
+       3.0 header
+       3.1 home 
+       3.2 bout
+       3.3 portfolio 
+       3.4 service 
+       3.5 team
+       3.6 prices
+       3.7 contact
+       3.8 contact 
+       3.9 footer
+
+*/
+
+/* 1. common styles */
+/* 
+container
+opacity hover
+section header
+section padding
+hover effect 1 : left t right 
+hover effect 2 : top to bottom
+*/
+/* .about , .portfolio {
+    width: 100vw;
+    height: 100vh;
+} */
+.over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 , 0.7)
+}
+
+.hover-opacity {
+    transition: opacity 0.2s
+}
+
+.hover-opacity:hover {
+    opacity: .8;
+}
+
+
+.tb-effect , .ltr-effect{
+    position: relative;
+}
+
+.ltr-effect::after, .tb-effect::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(27, 27, 27);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.ltr-effect::after {
+    width: 0;
+    height: 100%;
+}
+
+.ltr-effect:hover::after{
+    width: 100%;
+}
+
+.tb-effect::after {
+  width: 100%;
+  height: 0;
+}
+
+.tb-effect:hover::after {
+    height: 100%;
+}
+
+/* 2. general style */
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+button {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd-y {
+    padding: 120px 0;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header .section-title {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .section-line {
+    display: block;
+    height: 5px;
+    width: 60px;
+    background-color: var(--maincolor);
+    margin: 0 auto 70px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --maincolor : #5195ff;
+    --gray-color : #999;
+    --white : #fff;
+}
+
+.bg-gray{
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+/* numbers */
+
+
+
+
+
+
+
+
+
+/* blog */
+
+
+.blog-content {
+    overflow: hidden;
+}
+
+.blog-item {
+    width: 30%;
+    float: left;
+    background-color: var(--white);
+}
+.blog-item-img img {
+    width: 100%;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-list {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.blog-list li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.blog-list li i {
+    color: var(--maincolor);
+}
+
+.blog-title {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.blog-description {
+    color: var(--gray-color);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.blog-link {
+    color: var(--maincolor);
+}
+
+.blog-item.mg {
+    margin: 0 5%;
+}
+
+.form-contact {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.form-contact-list {
+    float: left;
+    width: 30%;
+    text-align: center;
+    list-style: none;
+}
+
+.form-contact-list.mg {
+    margin: 0 5%;
+}
+
+.form-contact-list li {
+    display: block;
+}
+
+.form-contact-list li i {
+    color: var(--maincolor);
+    margin-bottom: 15px ;
+}
+
+.form-contact-list-desc {
+    margin-top: 15px;
+    color: var(--gray-color);
+}
+
+.form-info {
+    width: 70%;
+    margin: auto;
+}
+
+.form-info input {
+    height: 30px;
+    padding: 5px;
+    background-color: #e8e8e8;
+    border: none;
+    border-var(--gray-color);
+    margin-bottom: 15px;
+}
+
+.form-info input:hover  {
+    border:solid var(--maincolor);
+    border-width: 1px 1px 2px 1px;
+}
+
+input[name = "name"] , input[name = "email"] {
+    width: 49%;
+}
+
+input[name = "name"]  {
+    margin-right: 1% ;
+}
+
+input[name = "subject"] {
+    width: 100%;
+}
+
+input[name = "message"] {
+    width: 100%;
+    height: 100px;
+}
+
+.form-info button {
+    background-color: var(--maincolor);
+    display: block;
+    width: 150px;
+    height: 40px;
+    color: var(--white);
+    font-size: 15px;
+    border: none;
+    margin: auto;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #1c1d21;
+    text-align: center;
+    padding:60px 0;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 20px 0 ;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--maincolor);
+    color: var(--white);
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.footer-links li a i {
+    line-height: 50px;
+}
+
+.footer .copyright {
+    color: var(--gray-color);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

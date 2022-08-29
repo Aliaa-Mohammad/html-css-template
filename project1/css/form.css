@@ -1,0 +1,77 @@
+/* form */
+.form-contact {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.form-contact-list {
+    float: left;
+    width: 30%;
+    text-align: center;
+    list-style: none;
+}
+
+.form-contact-list.mg {
+    margin: 0 5%;
+}
+
+.form-contact-list li {
+    display: block;
+}
+
+.form-contact-list li i {
+    color: var(--maincolor);
+    margin-bottom: 15px ;
+}
+
+.form-contact-list-desc {
+    margin-top: 15px;
+    color: var(--gray-color);
+}
+
+.form-info {
+    width: 70%;
+    margin: auto;
+}
+
+.form-info input {
+    height: 30px;
+    padding: 5px;
+    background-color: #e8e8e8;
+    border: none;
+    border-var(--gray-color);
+    margin-bottom: 15px;
+}
+
+.form-info input:hover  {
+    border:solid var(--maincolor);
+    border-width: 1px 1px 2px 1px;
+}
+
+input[name = "name"] , input[name = "email"] {
+    width: 49%;
+}
+
+input[name = "name"]  {
+    margin-right: 1% ;
+}
+
+input[name = "subject"] {
+    width: 100%;
+}
+
+input[name = "message"] {
+    width: 100%;
+    height: 100px;
+}
+
+.form-info button {
+    background-color: var(--maincolor);
+    display: block;
+    width: 150px;
+    height: 40px;
+    color: var(--white);
+    font-size: 15px;
+    border: none;
+    margin: auto;
+}

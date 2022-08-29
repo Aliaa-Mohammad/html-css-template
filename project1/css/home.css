@@ -1,0 +1,46 @@
+.home {
+    height: 100vh;
+    background-image: url(../photos/background/background1.jpg);
+    background-size: cover; /* شانن أخلي الصوة تكون علي كد بالظبط اللمقاس بتاعك */ 
+    position: relative;
+    /* font-size: ; */
+}
+
+.home-content {
+    position : absolute ; 
+    top : 50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    width: 65%;
+    color: var(--white);
+}
+
+.title {
+    font-size: 3.5rem;
+    /* text-transform: uppercase; */
+}
+
+.home .home-descritopn {
+    margin: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.home .btn {
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px; /* عشان نتحكم في انحاء حواف الزر */
+    border: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.btn.start {
+    margin-right: 10px;
+    /* background-color: white; */
+}
+
+.btn.learn {
+    background-color:  var(--maincolor);
+    color: white;
+}

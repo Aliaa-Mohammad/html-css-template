@@ -1,0 +1,91 @@
+/* pottfolio */
+
+
+.portfolio-content {
+    overflow: hidden;
+}
+.portfolio-item {
+    width: 32%;
+    float: left;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 20px;
+}
+
+.portfolio-item.mg {
+    margin: 0 2%;
+}
+
+.layer-content .layer-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+    text-align: center;
+}
+
+.layer-content .category{
+    font-size: 20px;
+    color: var(--maincolor);
+    display: block;
+    margin-bottom:  10px; 
+    position: relative;
+    top: 10px;
+    transition: top 0.5s;
+    transition-delay: .2s;
+} 
+
+.layr-content-title {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 15px;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s;
+    transition-delay: .3s;
+}
+
+.layer-content a i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor);
+    line-height: 40px;
+    color: var(--white);
+    position: relative;
+    top: 10px;
+    transition: top 0.5s;
+    transition-delay: .3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+
+
+
+.portfolio-item .layer-content {
+    position: absolute;
+    background: rgba(0 , 0 , 0 , .5);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: opacity 0.2s ;
+}
+
+.portfolio-item:hover .layer-content {
+    opacity: 1;
+    /* visibility: visible; */
+}
+
+.portfolio-item:hover .layer-content a i , 
+.portfolio-item:hover .layr-content-title , 
+.portfolio-item:hover  .category {
+    
+    top : 0 ;
+}
+
